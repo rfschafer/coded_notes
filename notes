@@ -1,0 +1,36 @@
+If a problem is hard to parse, think about how you would solve the problem manually
+	-card deck example
+Write dynamic code and keep note that I will be using massive data sets in the future. 
+
+During tech interviews, start with semi-wet code to solve the problem. Once solved, the interviewer may ask you to refactor or dry it up. Refactor in steps until it's as dry as you can code. The point of this is not to hide aces up your sleeve, as this inherently means you're on a different page than the interviewer, which isn't cool. The point of semi-wet code at first is to be on the same page: preventing minor points of confusion from taking time away from the interview.  
+
+Always start a problem with a high-level overview (an outline since you are using a language to write a document).
+
+The parameter is the assigned name for the input data. The argument is the object passed into the parameter.
+
+							parameter 
+									v
+def cow_tipping(word)
+	word
+end
+
+p cow_tipping("cows")
+							^
+					argument
+ 
+Record yourself talking through the problem.
+
+If you have a one-liner in mind, break up the pieces so you have "clearer" code.
+
+(1..3).to_a vs (1..3).each => each automatically converts to an array => false. each iterates through the range as is
+
+If a condition is long, store it in a variable.
+
+Nested loops => i.e. 2D data, e.g. matrices
+
+2d arrays... lists within lists... plans within plans
+
+If there are two operations in separate conditionals, explicity return each operation. Otherwise, the interpreter will iterate through each line of code until the last executable line and return that, i.e. the implicit return. Return this or return this.
+
+Question: ask about the behavior of return in line 43: return no-return, why is only the word returned in the second conditional? => because the method will return nil, thus object.each {|thing| nil} == object
+	-"ruby please do nothing"
