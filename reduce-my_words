@@ -1,0 +1,16 @@
+[1,2,3,4,5].reduce(0, :+)
+#for summation: arr.reduce(sum initialization, operation)
+
+#under the hood
+#first step: initialize sum to 0 
+#summation of 0 and the first element: 0.+(1) => 1
+#1st iteration: 1.+(2) => 3
+#2nd iteration: 3.+(3) => 6
+#3rd iteration: 6.+(4) => 10
+#4th iteration: 10.+(5) => 15
+#method automatically stops here and returns 15
+
+#person might ask, "What is a symbol?"
+#the symbol :+ is a symbolic link to the plus method of class Integer
+	#as an aside, hash[key] == hash[:key]
+	#the symbol :key points to its value, which is exactly what a key does
