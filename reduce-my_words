@@ -1,5 +1,5 @@
 [1,2,3,4,5].reduce(0, :+)
-#for summation: arr.reduce(sum initialization, operation)
+#for summation: arr.reduce(accumulator initialization, operation)
 
 #under the hood
 #first step: initialize sum to 0 
